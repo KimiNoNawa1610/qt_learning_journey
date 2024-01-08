@@ -53,6 +53,10 @@ int main(int argc, char *argv[])
     cout.flush();
     QTextStream qtin(stdin); // reading the standard input instead of cin >>. Problem: Why this part is never execute,
     //the user cannot input anything. It go directly to the else statement
+    //what I have tried:
+    //https://stackoverflow.com/questions/67857057/program-skipping-first-input-after-loop
+    //https://stackoverflow.com/questions/10553597/cin-and-getline-skipping-input
+    //but they do not work.
 
     QString line = qtin.readLine().trimmed().toUpper(); // available library to read input, remove white space and convert to upper case
 
