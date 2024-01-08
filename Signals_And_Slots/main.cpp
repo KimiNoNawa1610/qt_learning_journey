@@ -48,7 +48,9 @@ int main(int argc, char *argv[])
 
     // }while(true);
 
+    cin.ignore();
     cout << "Please Enter on,off,test or quit:"<<endl;
+    cout.flush();
     QTextStream qtin(stdin); // reading the standard input instead of cin >>. Problem: Why this part is never execute,
     //the user cannot input anything. It go directly to the else statement
 
