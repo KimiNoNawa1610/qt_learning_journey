@@ -5,6 +5,10 @@
 #include <QDate>
 #include <QVariant>
 #include <algorithm>
+#include <QHash>
+#include <QSet>
+#include <QMap>
+#include <QLinkedList>
 #include "cat.h"
 #include "dog.h"
 
@@ -143,6 +147,71 @@ int main(int argc, char *argv[])
     dates.append(dates[0].addDays(1));
 
     qInfo() << dates;
+
+    //* QHash *
+    // provide a key-value pair that is similar to a dictionary in Python
+
+    QHash<QString,int> ages; // declare the datatype of key and value
+    ages.insert("Artoria",1000);
+    ages.insert("Merlin",1300);
+    ages.insert("Victoria",81);
+    //ages.insert("Tesla","86"); // this will cause error since the Hash is string key and in value
+    ages.insert("Thorfin",55);
+    ages.insert("Canute",65);
+
+    qInfo()<<ages.size();
+    foreach(QString key, ages.keys()){
+        qInfo()<<key<<"age is "<<ages[key]; // get the value for a key similar to Python dictionary
+    }
+
+    //* QSet *
+    // similar to a set in Python, stores value in un-ordered collections
+    QSet<QString> people;
+    people.insert("Washington");
+    people.insert("Frankin");
+    people.insert("Adams");
+    people.insert("Jefferson");
+    people.insert("Paine");
+    qInfo()<<"\nUS Prominent People:";
+    foreach(QString person, people){
+        qInfo()<<person;
+    }
+
+    //* QMap *
+    // is a template class that provides a red-black-tree-based dictionary
+    // similar to QHash, it stores a pairs of key-value
+    // a little bit slower than QHash
+
+    QMap<QString, QString> locations;
+    locations.insert("Eiffel Tower","France");
+    locations.insert("Voyager","Space");
+    locations.insert("Kyoto","Japan");
+
+    foreach(QString key, locations.keys()){
+        qInfo()<<key<<"is in "<<locations[key]; // get the value for a key similar to Python dictionary
+    }
+
+    //* QLinkedList *
+    // stores a list of values and provides iterator-based access as well as constant time insertions and removals
+    // but we will not use it much
+    // should be using std::list instead
+    QLinkedList<int> list;
+    for(int i = 0; i < 10; i++) {
+        list.append(i);
+    }
+
+    list.removeFirst();
+    list.removeLast();
+    list.removeOne(5);
+    if(list.contains(3)) qInfo() << "Contains 3";
+    list.clear();
+
+    qInfo() << "Done";
+
+
+
+
+
 
 
 
