@@ -251,6 +251,7 @@ Makefile: ../1st_project_event_handling/1st_project_event_handling.pro D:/QT/5.1
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/qt_config.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/win32-g++/qmake.conf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/exclusive_builds.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/toolchain.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/default_pre.prf \
@@ -279,7 +280,6 @@ Makefile: ../1st_project_event_handling/1st_project_event_handling.pro D:/QT/5.1
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Gui.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Core.prl \
 		D:/QT/5.15.2/mingw81_32/lib/qtmain.prl \
-		.qmake.stash \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\1st_project_event_handling\1st_project_event_handling.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 D:/QT/5.15.2/mingw81_32/mkspecs/features/spec_pre.prf:
@@ -463,6 +463,7 @@ D:/QT/5.15.2/mingw81_32/mkspecs/features/qt_functions.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/qt_config.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/win32-g++/qmake.conf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/exclusive_builds.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/toolchain.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/default_pre.prf:
@@ -491,7 +492,6 @@ D:/QT/5.15.2/mingw81_32/lib/Qt5Widgets.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Gui.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Core.prl:
 D:/QT/5.15.2/mingw81_32/lib/qtmain.prl:
-.qmake.stash:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\1st_project_event_handling\1st_project_event_handling.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
