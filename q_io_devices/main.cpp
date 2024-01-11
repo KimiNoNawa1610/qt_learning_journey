@@ -7,8 +7,10 @@
 #include <QDateTime>
 #include <QFileInfo>
 #include <QStorageInfo>
+#include <QDataStream>
 #include <QByteArray>
 #include <QFile>
+#include <QRandomGenerator>
 
 // function to create a directory
 bool create_dir(QString path){
@@ -139,6 +141,23 @@ void read_lines(QString path){
     qInfo()<<"Done";
 }
 
+void read_ds(QString path){
+    QFile file(path);
+    if(!file.exists()){
+        qWarning()<<"File not found";
+        return;
+    }
+
+    QDataStream stream(&file); // we are not opening or closing the stream
+    // the stream will close when the file is close
+
+    QString banner;
+    stream>>banner;
+    qInfo()<<"Banner: "<<banner;
+    file.close();
+
+}
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
@@ -221,6 +240,14 @@ int main(int argc, char *argv[])
         read_file(read_file_path);
         read_lines(read_file_path);
     }
+
+    //* QDataStream *
+    QString ds_test_file = QDir::currentPath()+QDir::separator()+"ds_test.txt";
+    qInfo()<<ds_test_file;
+    if(create_file(path)){
+        read_ds(path);
+    }
+
 
     return a.exec();
 }
