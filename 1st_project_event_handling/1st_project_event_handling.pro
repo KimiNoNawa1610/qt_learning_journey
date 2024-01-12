@@ -10,13 +10,17 @@ CONFIG += c++17
 
 SOURCES += \
     childbutton.cpp \
+    childlineedit.cpp \
     main.cpp \
     parentbutton.cpp \
+    parentlineedit.cpp \
     widget.cpp
 
 HEADERS += \
     childbutton.h \
+    childlineedit.h \
     parentbutton.h \
+    parentlineedit.h \
     widget.h
 
 FORMS += \

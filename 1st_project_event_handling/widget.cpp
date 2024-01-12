@@ -2,6 +2,7 @@
 #include "ui_widget.h"
 #include "parentbutton.h"
 #include "childbutton.h"
+#include "childlineedit.h"
 #include <QDebug>
 #include <QMouseEvent>
 #include <QMenu>
@@ -12,11 +13,12 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
     ChildButton * button = new ChildButton(this);
+    ChildLineEdit* edit = new ChildLineEdit(this);
     button->setText("Child Button");
     connect(button,&ChildButton::clicked,[=](){
         qDebug()<<"Button Clicked";
     });
-
+    ui->verticalLayout->addWidget(edit);
     ui->verticalLayout->addWidget(button);
 }
 

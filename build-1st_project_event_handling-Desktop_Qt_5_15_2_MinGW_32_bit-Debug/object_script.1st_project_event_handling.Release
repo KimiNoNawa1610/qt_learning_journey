@@ -1,0 +1,11 @@
+release/childbutton.o
+release/childlineedit.o
+release/main.o
+release/parentbutton.o
+release/parentlineedit.o
+release/widget.o
+release/moc_childbutton.o
+release/moc_childlineedit.o
+release/moc_parentbutton.o
+release/moc_parentlineedit.o
+release/moc_widget.o
