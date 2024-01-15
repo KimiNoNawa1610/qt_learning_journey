@@ -1,11 +1,17 @@
+debug/application.o
 debug/childbutton.o
 debug/childlineedit.o
+debug/eventbutton.o
+debug/filter.o
 debug/main.o
 debug/parentbutton.o
 debug/parentlineedit.o
 debug/widget.o
+debug/moc_application.o
 debug/moc_childbutton.o
 debug/moc_childlineedit.o
+debug/moc_eventbutton.o
+debug/moc_filter.o
 debug/moc_parentbutton.o
 debug/moc_parentlineedit.o
 debug/moc_widget.o

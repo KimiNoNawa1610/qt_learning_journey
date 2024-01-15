@@ -9,16 +9,22 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    application.cpp \
     childbutton.cpp \
     childlineedit.cpp \
+    eventbutton.cpp \
+    filter.cpp \
     main.cpp \
     parentbutton.cpp \
     parentlineedit.cpp \
     widget.cpp
 
 HEADERS += \
+    application.h \
     childbutton.h \
     childlineedit.h \
+    eventbutton.h \
+    filter.h \
     parentbutton.h \
     parentlineedit.h \
     widget.h

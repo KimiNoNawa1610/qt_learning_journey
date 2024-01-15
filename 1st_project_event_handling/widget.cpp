@@ -3,6 +3,7 @@
 #include "parentbutton.h"
 #include "childbutton.h"
 #include "childlineedit.h"
+#include "eventbutton.h"
 #include <QDebug>
 #include <QMouseEvent>
 #include <QMenu>
@@ -14,12 +15,15 @@ Widget::Widget(QWidget *parent)
     ui->setupUi(this);
     ChildButton * button = new ChildButton(this);
     ChildLineEdit* edit = new ChildLineEdit(this);
+    EventButton * ebutton = new EventButton(this);
     button->setText("Child Button");
+    ebutton->setText("Custom Event Button");
     connect(button,&ChildButton::clicked,[=](){
         qDebug()<<"Button Clicked";
     });
     ui->verticalLayout->addWidget(edit);
     ui->verticalLayout->addWidget(button);
+    ui->verticalLayout->addWidget(ebutton);
 }
 
 Widget::~Widget()

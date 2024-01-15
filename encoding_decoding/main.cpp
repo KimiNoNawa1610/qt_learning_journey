@@ -5,6 +5,7 @@
 #include <QTextStream>
 #include <QRandomGenerator>
 
+// Qt provides a set of QTextCodec classes to help with converting non-Unicode formats to and from Unicode.
 
 QByteArray make_ascii_data(){
     QByteArray data;
