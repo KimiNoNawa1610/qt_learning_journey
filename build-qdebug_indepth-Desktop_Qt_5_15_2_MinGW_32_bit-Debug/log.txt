@@ -1,0 +1,2 @@
+Mon Jan 15 09:42:26 2024-Info: test! in %2file: ..\qdebug_indepth\main.cpp line:13
+Mon Jan 15 09:42:26 2024-Info: Finished in %2file: ..\qdebug_indepth\main.cpp line:17
