@@ -38,9 +38,9 @@ public:
     QComboBox *joinbox;
     QLabel *label_6;
     QComboBox *brushbox;
-    QCheckBox *checkBox;
+    QCheckBox *a;
     QComboBox *shapebox;
-    QCheckBox *checkBox_2;
+    QCheckBox *t;
 
     void setupUi(QWidget *Widget)
     {
@@ -111,20 +111,20 @@ public:
 
         gridLayout->addWidget(brushbox, 5, 1, 1, 1);
 
-        checkBox = new QCheckBox(Widget);
-        checkBox->setObjectName(QString::fromUtf8("checkBox"));
+        a = new QCheckBox(Widget);
+        a->setObjectName(QString::fromUtf8("a"));
 
-        gridLayout->addWidget(checkBox, 6, 0, 1, 2);
+        gridLayout->addWidget(a, 6, 0, 1, 2);
 
         shapebox = new QComboBox(Widget);
         shapebox->setObjectName(QString::fromUtf8("shapebox"));
 
         gridLayout->addWidget(shapebox, 0, 1, 1, 1);
 
-        checkBox_2 = new QCheckBox(Widget);
-        checkBox_2->setObjectName(QString::fromUtf8("checkBox_2"));
+        t = new QCheckBox(Widget);
+        t->setObjectName(QString::fromUtf8("t"));
 
-        gridLayout->addWidget(checkBox_2, 7, 0, 1, 2);
+        gridLayout->addWidget(t, 7, 0, 1, 2);
 
 
         verticalLayout->addLayout(gridLayout);
@@ -144,8 +144,8 @@ public:
         label_4->setText(QCoreApplication::translate("Widget", "Pen Cap", nullptr));
         label_5->setText(QCoreApplication::translate("Widget", "Pen Join", nullptr));
         label_6->setText(QCoreApplication::translate("Widget", "Brush Style", nullptr));
-        checkBox->setText(QCoreApplication::translate("Widget", "Antializing", nullptr));
-        checkBox_2->setText(QCoreApplication::translate("Widget", "Transform", nullptr));
+        a->setText(QCoreApplication::translate("Widget", "Antializing", nullptr));
+        t->setText(QCoreApplication::translate("Widget", "Transform", nullptr));
     } // retranslateUi
 
 };

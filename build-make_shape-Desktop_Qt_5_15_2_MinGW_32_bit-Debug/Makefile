@@ -251,6 +251,7 @@ Makefile: ../make_shape/make_shape.pro D:/QT/5.15.2/mingw81_32/mkspecs/win32-g++
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/qt_config.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/win32-g++/qmake.conf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/exclusive_builds.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/toolchain.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/default_pre.prf \
@@ -279,8 +280,8 @@ Makefile: ../make_shape/make_shape.pro D:/QT/5.15.2/mingw81_32/mkspecs/win32-g++
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Gui.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Core.prl \
 		D:/QT/5.15.2/mingw81_32/lib/qtmain.prl \
-		.qmake.stash \
-		D:/QT/5.15.2/mingw81_32/mkspecs/features/build_pass.prf
+		D:/QT/5.15.2/mingw81_32/mkspecs/features/build_pass.prf \
+		../make_shape/resource.qrc
 	$(QMAKE) -o Makefile ..\make_shape\make_shape.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 D:/QT/5.15.2/mingw81_32/mkspecs/features/spec_pre.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/qdevice.pri:
@@ -463,6 +464,7 @@ D:/QT/5.15.2/mingw81_32/mkspecs/features/qt_functions.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/qt_config.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/win32-g++/qmake.conf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/exclusive_builds.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/toolchain.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/default_pre.prf:
@@ -491,8 +493,8 @@ D:/QT/5.15.2/mingw81_32/lib/Qt5Widgets.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Gui.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Core.prl:
 D:/QT/5.15.2/mingw81_32/lib/qtmain.prl:
-.qmake.stash:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/build_pass.prf:
+../make_shape/resource.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\make_shape\make_shape.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 

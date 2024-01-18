@@ -115,13 +115,13 @@ void Widget::on_brushbox_activated(int index)
 
 void Widget::on_a_toggled(bool checked)
 {
-
+    canvas->setAntialized(checked);
 }
 
 
 void Widget::on_t_toggled(bool checked)
 {
-
+    canvas->setTransformed(checked);
 }
 
 void Widget::penChanged()
