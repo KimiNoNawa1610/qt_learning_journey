@@ -267,6 +267,7 @@ Makefile: ../painterv1/painterv1.pro D:/QT/5.15.2/mingw81_32/mkspecs/win32-g++/q
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/resources.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/moc.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/win32/opengl.prf \
+		D:/QT/5.15.2/mingw81_32/mkspecs/features/uic.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/qmake_use.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/file_copies.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/win32/windows.prf \
@@ -275,6 +276,7 @@ Makefile: ../painterv1/painterv1.pro D:/QT/5.15.2/mingw81_32/mkspecs/win32-g++/q
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/yacc.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/lex.prf \
 		../painterv1/painterv1.pro \
+		D:/QT/5.15.2/mingw81_32/lib/Qt5Widgets.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Gui.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Core.prl \
 		D:/QT/5.15.2/mingw81_32/lib/qtmain.prl \
@@ -478,6 +480,7 @@ D:/QT/5.15.2/mingw81_32/mkspecs/features/resources_functions.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/resources.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/moc.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/win32/opengl.prf:
+D:/QT/5.15.2/mingw81_32/mkspecs/features/uic.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/qmake_use.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/file_copies.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/win32/windows.prf:
@@ -486,6 +489,7 @@ D:/QT/5.15.2/mingw81_32/mkspecs/features/exceptions.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/yacc.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/lex.prf:
 ../painterv1/painterv1.pro:
+D:/QT/5.15.2/mingw81_32/lib/Qt5Widgets.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Gui.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Core.prl:
 D:/QT/5.15.2/mingw81_32/lib/qtmain.prl:
