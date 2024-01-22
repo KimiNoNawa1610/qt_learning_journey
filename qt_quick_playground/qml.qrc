@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ui/LeftBar/LeftBar.qml</file>
+        <file>ui/MainScreen/MainScreen.qml</file>
+        <file>ui/access/beaglelogo 2.a3bd98fa2d5dc31fff04.png</file>
+        <file>ui/access/cogwheel.png</file>
+        <file>ui/access/padlock_locked.png</file>
+        <file>ui/access/padlock_unclocked.png</file>
+    </qresource>
+</RCC>
