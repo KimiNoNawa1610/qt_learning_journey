@@ -20,11 +20,37 @@ Rectangle{
         name:"osm" // can be changed to Esri or any other map, but will need addtional installation
     }
 
-    Map{
-        anchors.fill:parent
-        plugin:map_plugin
-        center:QtPositioning.coordinate(33.670780,-117.864810) // Oslo Qt company center
+    Map {
+        anchors.fill: parent
+        plugin: map_plugin
+        center: QtPositioning.coordinate(33.670780, -117.864810)
         zoomLevel: 14
+
+        // add a MapItemView to show the current navigation location
+        MapItemView {
+            delegate: MapQuickItem {
+                anchorPoint.x: image.width / 2
+                anchorPoint.y: image.height
+                coordinate: model.coordinate
+                sourceItem: Item {
+                    width: 30
+                    height: 30
+                    Image {
+                        id: image
+                        source: "qrc:/ui/access/location-pin.png"
+                    }
+                }
+            }
+        }
+
+        // connect the centerMap signal from System to update the map center
+        Connections {
+            target: systemHandler
+            onCenterMap: {
+                center = coordinates;
+            }
+        }
+
     }
 
     Image{
@@ -95,5 +121,16 @@ Rectangle{
         font.bold: true
         color:"black"
         text:systemHandler.userName
+    }
+
+    NavigationSearchBox{
+        id:search_box
+        anchors{
+            left:lock_icon.left
+            top:lock_icon.bottom
+            topMargin: 10
+        }
+        width:parent.width/3
+        height:parent.height/12
     }
 }

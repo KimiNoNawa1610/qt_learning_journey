@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_System_t {
-    QByteArrayData data[19];
-    char stringdata0[257];
+    QByteArrayData data[26];
+    char stringdata0[372];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -38,29 +38,39 @@ QT_MOC_LITERAL(2, 27, 0), // ""
 QT_MOC_LITERAL(3, 28, 18), // "temperatureChanged"
 QT_MOC_LITERAL(4, 47, 15), // "userNameChanged"
 QT_MOC_LITERAL(5, 63, 18), // "currentTimeChanged"
-QT_MOC_LITERAL(6, 82, 11), // "setUserName"
-QT_MOC_LITERAL(7, 94, 11), // "newUserName"
-QT_MOC_LITERAL(8, 106, 14), // "setTemperature"
-QT_MOC_LITERAL(9, 121, 14), // "newTemperature"
-QT_MOC_LITERAL(10, 136, 15), // "setScreenLocked"
-QT_MOC_LITERAL(11, 152, 15), // "newScreenLocked"
-QT_MOC_LITERAL(12, 168, 14), // "setCurrentTime"
-QT_MOC_LITERAL(13, 183, 14), // "newCurrentTime"
-QT_MOC_LITERAL(14, 198, 12), // "timerTimeOut"
-QT_MOC_LITERAL(15, 211, 12), // "screenLocked"
-QT_MOC_LITERAL(16, 224, 11), // "temperature"
-QT_MOC_LITERAL(17, 236, 8), // "userName"
-QT_MOC_LITERAL(18, 245, 11) // "currentTime"
+QT_MOC_LITERAL(6, 82, 25), // "navigationLocationChanged"
+QT_MOC_LITERAL(7, 108, 9), // "centerMap"
+QT_MOC_LITERAL(8, 118, 14), // "QGeoCoordinate"
+QT_MOC_LITERAL(9, 133, 11), // "coordinates"
+QT_MOC_LITERAL(10, 145, 11), // "setUserName"
+QT_MOC_LITERAL(11, 157, 11), // "newUserName"
+QT_MOC_LITERAL(12, 169, 14), // "setTemperature"
+QT_MOC_LITERAL(13, 184, 14), // "newTemperature"
+QT_MOC_LITERAL(14, 199, 15), // "setScreenLocked"
+QT_MOC_LITERAL(15, 215, 15), // "newScreenLocked"
+QT_MOC_LITERAL(16, 231, 14), // "setCurrentTime"
+QT_MOC_LITERAL(17, 246, 14), // "newCurrentTime"
+QT_MOC_LITERAL(18, 261, 12), // "timerTimeOut"
+QT_MOC_LITERAL(19, 274, 18), // "navigateToLocation"
+QT_MOC_LITERAL(20, 293, 8), // "location"
+QT_MOC_LITERAL(21, 302, 23), // "handleGeocodingFinished"
+QT_MOC_LITERAL(22, 326, 12), // "screenLocked"
+QT_MOC_LITERAL(23, 339, 11), // "temperature"
+QT_MOC_LITERAL(24, 351, 8), // "userName"
+QT_MOC_LITERAL(25, 360, 11) // "currentTime"
 
     },
     "System\0screenLockedChanged\0\0"
     "temperatureChanged\0userNameChanged\0"
-    "currentTimeChanged\0setUserName\0"
-    "newUserName\0setTemperature\0newTemperature\0"
-    "setScreenLocked\0newScreenLocked\0"
-    "setCurrentTime\0newCurrentTime\0"
-    "timerTimeOut\0screenLocked\0temperature\0"
-    "userName\0currentTime"
+    "currentTimeChanged\0navigationLocationChanged\0"
+    "centerMap\0QGeoCoordinate\0coordinates\0"
+    "setUserName\0newUserName\0setTemperature\0"
+    "newTemperature\0setScreenLocked\0"
+    "newScreenLocked\0setCurrentTime\0"
+    "newCurrentTime\0timerTimeOut\0"
+    "navigateToLocation\0location\0"
+    "handleGeocodingFinished\0screenLocked\0"
+    "temperature\0userName\0currentTime"
 };
 #undef QT_MOC_LITERAL
 
@@ -70,44 +80,52 @@ static const uint qt_meta_data_System[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
-       4,   76, // properties
+      13,   14, // methods
+       4,  104, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       4,       // signalCount
+       6,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   59,    2, 0x06 /* Public */,
-       3,    0,   60,    2, 0x06 /* Public */,
-       4,    0,   61,    2, 0x06 /* Public */,
-       5,    0,   62,    2, 0x06 /* Public */,
+       1,    0,   79,    2, 0x06 /* Public */,
+       3,    0,   80,    2, 0x06 /* Public */,
+       4,    0,   81,    2, 0x06 /* Public */,
+       5,    0,   82,    2, 0x06 /* Public */,
+       6,    0,   83,    2, 0x06 /* Public */,
+       7,    1,   84,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       6,    1,   63,    2, 0x0a /* Public */,
-       8,    1,   66,    2, 0x0a /* Public */,
-      10,    1,   69,    2, 0x0a /* Public */,
-      12,    1,   72,    2, 0x0a /* Public */,
-      14,    0,   75,    2, 0x0a /* Public */,
+      10,    1,   87,    2, 0x0a /* Public */,
+      12,    1,   90,    2, 0x0a /* Public */,
+      14,    1,   93,    2, 0x0a /* Public */,
+      16,    1,   96,    2, 0x0a /* Public */,
+      18,    0,   99,    2, 0x0a /* Public */,
+      19,    1,  100,    2, 0x0a /* Public */,
+      21,    0,  103,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 8,    9,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    7,
-    QMetaType::Void, QMetaType::Int,    9,
-    QMetaType::Void, QMetaType::Bool,   11,
-    QMetaType::Void, QMetaType::QString,   13,
+    QMetaType::Void, QMetaType::QString,   11,
+    QMetaType::Void, QMetaType::Int,   13,
+    QMetaType::Void, QMetaType::Bool,   15,
+    QMetaType::Void, QMetaType::QString,   17,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   20,
     QMetaType::Void,
 
  // properties: name, type, flags
-      15, QMetaType::Bool, 0x00495903,
-      16, QMetaType::Int, 0x00495903,
-      17, QMetaType::QString, 0x00495903,
-      18, QMetaType::QString, 0x00495903,
+      22, QMetaType::Bool, 0x00495903,
+      23, QMetaType::Int, 0x00495903,
+      24, QMetaType::QString, 0x00495903,
+      25, QMetaType::QString, 0x00495903,
 
  // properties: notify_signal_id
        0,
@@ -128,12 +146,27 @@ void System::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 1: _t->temperatureChanged(); break;
         case 2: _t->userNameChanged(); break;
         case 3: _t->currentTimeChanged(); break;
-        case 4: _t->setUserName((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 5: _t->setTemperature((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 6: _t->setScreenLocked((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 7: _t->setCurrentTime((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 8: _t->timerTimeOut(); break;
+        case 4: _t->navigationLocationChanged(); break;
+        case 5: _t->centerMap((*reinterpret_cast< const QGeoCoordinate(*)>(_a[1]))); break;
+        case 6: _t->setUserName((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 7: _t->setTemperature((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: _t->setScreenLocked((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 9: _t->setCurrentTime((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 10: _t->timerTimeOut(); break;
+        case 11: _t->navigateToLocation((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 12: _t->handleGeocodingFinished(); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        case 5:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QGeoCoordinate >(); break;
+            }
+            break;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
@@ -162,6 +195,20 @@ void System::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
             using _t = void (System::*)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&System::currentTimeChanged)) {
                 *result = 3;
+                return;
+            }
+        }
+        {
+            using _t = void (System::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&System::navigationLocationChanged)) {
+                *result = 4;
+                return;
+            }
+        }
+        {
+            using _t = void (System::*)(const QGeoCoordinate & );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&System::centerMap)) {
+                *result = 5;
                 return;
             }
         }
@@ -223,13 +270,13 @@ int System::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 13;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
-            *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 9;
+        if (_id < 13)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 13;
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
@@ -273,6 +320,19 @@ void System::userNameChanged()
 void System::currentTimeChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+}
+
+// SIGNAL 4
+void System::navigationLocationChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
+}
+
+// SIGNAL 5
+void System::centerMap(const QGeoCoordinate & _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 5, _a);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

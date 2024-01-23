@@ -8,5 +8,8 @@
         <file>ui/access/padlock_locked.png</file>
         <file>ui/access/padlock_unclocked.png</file>
         <file>ui/access/user.png</file>
+        <file>ui/MainScreen/NavigationSearchBox.qml</file>
+        <file>ui/access/search-interface-symbol.png</file>
+        <file>ui/access/location-pin.png</file>
     </qresource>
 </RCC>
