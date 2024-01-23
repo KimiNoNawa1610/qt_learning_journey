@@ -6,7 +6,8 @@ QT += quick virtualkeyboard
 
 SOURCES += \
         controllers/system.cpp \
-        main.cpp
+        main.cpp \
+        test.cpp
 
 RESOURCES += qml.qrc
 
@@ -22,4 +23,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    controllers/system.h
+    controllers/system.h \
+    test.h

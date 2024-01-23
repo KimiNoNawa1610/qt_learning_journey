@@ -16,26 +16,27 @@ Rectangle{
     Image {
         id: logo
         anchors{
-            top:parent.top *0.9
+            top:parent.top
             left:parent.left
             right:parent.right
         }
-        width:parent.width/2
+        width:parent.width/5
         fillMode:Image.PreserveAspectFit
         source: "qrc:/ui/access/beaglelogo 2.a3bd98fa2d5dc31fff04.png"
     }
 
     // Settings
-    Image {
-        id: settings
-        anchors{
-            top:logo.top * 0.85
-            left:parent.left
-            right:parent.right
-        }
-        width:parent.width/2
-        fillMode:Image.PreserveAspectFit
-        source: "qrc:/ui/access/cogwheel.png"
-    }
+    // Image {
+    //     id: settings
+    //     anchors{
+    //         topMargin: 30
+    //         top:logo.bottom
+    //         left:parent.left
+    //         right:parent.right
+    //     }
+    //     width:parent.width/15000
+    //     fillMode:Image.PreserveAspectFit
+    //     source: "qrc:/ui/access/cogwheel.png"
+    // }
 
 }

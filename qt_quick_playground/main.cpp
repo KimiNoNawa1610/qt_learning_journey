@@ -1,7 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include<controllers/system.h> // import the cpp file
+#include "controllers/system.h" // import the cpp file
+#include "test.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,7 +13,10 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
-    System m_systemHandler; // make a system handler object
+    //test class for connect qml and cpp
+    test m_test;
+
+    System * m_systemHandler = new System(); // make a system handler object
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));
@@ -27,8 +31,8 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
     engine.load(url);
 
-    QQmlContext * context (engine.rootContext()); // get the context of the engine
-    context->setContextProperty("systemHandler",&m_systemHandler); // set the context property with the m_systemHanlder
+    engine.rootContext()->setContextProperty("test",&m_test);
+    engine.rootContext()->setContextProperty("systemHandler",m_systemHandler); // set the context property with the m_systemHanlder
 
     return app.exec();
 }

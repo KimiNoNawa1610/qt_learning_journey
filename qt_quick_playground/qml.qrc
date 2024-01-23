@@ -7,5 +7,6 @@
         <file>ui/access/cogwheel.png</file>
         <file>ui/access/padlock_locked.png</file>
         <file>ui/access/padlock_unclocked.png</file>
+        <file>ui/access/user.png</file>
     </qresource>
 </RCC>
