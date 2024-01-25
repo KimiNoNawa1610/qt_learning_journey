@@ -18,8 +18,8 @@ System::System(QObject *parent): QObject{parent}, m_screenLocked(true), m_temper
     timerTimeOut();  // initial call to set the current time
 
     // ssl debug
-    qDebug()<<QSslSocket::sslLibraryBuildVersionString();
-    qDebug()<<QSslSocket::sslLibraryVersionString();
+    qDebug()<<QSslSocket::sslLibraryBuildVersionString(); // the required ssl version
+    qDebug()<<QSslSocket::sslLibraryVersionString(); // the version that the application is using, but it is empty. Why?
 }
 
 // getter for the screenLocked property
