@@ -2,7 +2,7 @@ QT += quick virtualkeyboard
 QT += core gui location positioning # this is needed for the position and location
 QT += network
 
-LIBS += -LD:/'Program Files'/OpenSSL-Win64/bin -lubsec
+#LIBS += -LD:/'Program Files'/OpenSSL-Win64/bin -lubsec
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.

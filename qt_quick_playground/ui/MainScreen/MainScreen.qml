@@ -43,6 +43,15 @@ Rectangle{
             }
         }
 
+        MapPolyline {
+               line.width: 3
+               line.color: 'green'
+               path: [
+                   { latitude: 33.670780, longitude: -117.864810},
+                   { latitude: -27, longitude: 154.1 },
+               ]
+           }
+
         // connect the centerMap signal from System to update the map center
         Connections {
             target: systemHandler
@@ -132,5 +141,22 @@ Rectangle{
         }
         width:parent.width/3
         height:parent.height/12
+    }
+
+    Rectangle{
+        id:util_map_bar
+        anchors{
+            top:search_box.top
+            right:parent.right
+
+        }
+        height: parent.height/3
+        width:parent.width/8
+        color: "yellow"
+        Text {
+            id: util_place_holder
+            text: qsTr("Util Bar")
+            font.pixelSize: 20
+        }
     }
 }
