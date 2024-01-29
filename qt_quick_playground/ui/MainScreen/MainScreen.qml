@@ -2,6 +2,7 @@ import QtQuick 2.15
 import QtLocation 5.15
 import QtPositioning 5.15
 import QtQuick.Controls 2.15
+import QtQuick.Window 2.15
 
 // main screen
 Rectangle{
@@ -11,9 +12,8 @@ Rectangle{
         bottom:parent.bottom
         left:menu.right
     }
-    width:parent.width-menu.width
+    width:parent.width
     height:parent.height
-
 
     Plugin{
         id:map_plugin

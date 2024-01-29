@@ -11,5 +11,8 @@
         <file>ui/MainScreen/NavigationSearchBox.qml</file>
         <file>ui/access/search-interface-symbol.png</file>
         <file>ui/access/location-pin.png</file>
+        <file>ui/UserScreen/UserScreen.qml</file>
+        <file>ui/access/profile.png</file>
+        <file>StackViewPage.qml</file>
     </qresource>
 </RCC>

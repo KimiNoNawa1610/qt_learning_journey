@@ -110,6 +110,7 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_qml.cpp
 debug/qrc_qml.cpp: ../qt_quick_playground/qml.qrc \
 		D:/QT/5.15.2/mingw81_32/bin/rcc.exe \
+		../qt_quick_playground/StackViewPage.qml \
 		../qt_quick_playground/main.qml \
 		../qt_quick_playground/ui/access/padlock_locked.png \
 		../qt_quick_playground/ui/access/beaglelogo\ 2.a3bd98fa2d5dc31fff04.png \
@@ -118,9 +119,11 @@ debug/qrc_qml.cpp: ../qt_quick_playground/qml.qrc \
 		../qt_quick_playground/ui/access/padlock_unclocked.png \
 		../qt_quick_playground/ui/access/user.png \
 		../qt_quick_playground/ui/access/location-pin.png \
+		../qt_quick_playground/ui/access/profile.png \
 		../qt_quick_playground/ui/LeftBar/LeftBar.qml \
 		../qt_quick_playground/ui/MainScreen/MainScreen.qml \
-		../qt_quick_playground/ui/MainScreen/NavigationSearchBox.qml
+		../qt_quick_playground/ui/MainScreen/NavigationSearchBox.qml \
+		../qt_quick_playground/ui/UserScreen/UserScreen.qml
 	D:\QT\5.15.2\mingw81_32\bin\rcc.exe -name qml ..\qt_quick_playground\qml.qrc -o debug\qrc_qml.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
