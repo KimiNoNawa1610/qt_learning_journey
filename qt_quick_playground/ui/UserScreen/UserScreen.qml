@@ -65,7 +65,7 @@ Rectangle {
         }
         font.pixelSize: 20
         anchors.horizontalCenter: parent.horizontalCenter
-        editable: true
+        editable: false
         model: ListModel {
             id: language_options
             ListElement { text: "English"}

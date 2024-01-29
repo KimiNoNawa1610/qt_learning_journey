@@ -43,14 +43,21 @@ Rectangle{
             id:user_button
             width:parent.width
             text:"User Profile"
-            onClicked:main_loader.setSource("qrc:/ui/UserScreen/UserScreen.qml")
+            onClicked:{if (main_loader.source!="qrc:/ui/UserScreen/UserScreen.qml"){
+                    main_loader.setSource("qrc:/ui/UserScreen/UserScreen.qml")
+                }
+            }
         }
 
         Button{
             id:map_button
             width:parent.width
             text:"Map"
-            onClicked:main_loader.setSource("qrc:/ui/MainScreen/MainScreen.qml")
+            onClicked:{
+                if (main_loader.source!="qrc:/ui/MainScreen/MainScreen.qml"){
+                    main_loader.setSource("qrc:/ui/MainScreen/MainScreen.qml")
+                }
+            }
         }
 
         Button{
