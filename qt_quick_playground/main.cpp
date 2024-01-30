@@ -1,4 +1,4 @@
-#include <QGuiApplication>
+#include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include "controllers/system.h" // import the cpp file
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     //test class for connect qml and cpp
     test m_test;

@@ -15,5 +15,6 @@
         <file>ui/access/profile.png</file>
         <file>StackViewPage.qml</file>
         <file>ui/TableScreen/TableScreen.qml</file>
+        <file>ui/ChartScreen/ChartScreen.qml</file>
     </qresource>
 </RCC>

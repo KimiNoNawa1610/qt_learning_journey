@@ -267,6 +267,7 @@ Makefile: ../qt_quick_playground/qt_quick_playground.pro D:/QT/5.15.2/mingw81_32
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/resources.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/moc.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/win32/opengl.prf \
+		D:/QT/5.15.2/mingw81_32/mkspecs/features/uic.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/qmake_use.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/file_copies.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/win32/windows.prf \
@@ -275,10 +276,10 @@ Makefile: ../qt_quick_playground/qt_quick_playground.pro D:/QT/5.15.2/mingw81_32
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/yacc.prf \
 		D:/QT/5.15.2/mingw81_32/mkspecs/features/lex.prf \
 		../qt_quick_playground/qt_quick_playground.pro \
-		D:/QT/5.15.2/mingw81_32/lib/Qt5VirtualKeyboard.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Location.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5PositioningQuick.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Quick.prl \
+		D:/QT/5.15.2/mingw81_32/lib/Qt5Widgets.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Gui.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5QmlModels.prl \
 		D:/QT/5.15.2/mingw81_32/lib/Qt5Qml.prl \
@@ -486,6 +487,7 @@ D:/QT/5.15.2/mingw81_32/mkspecs/features/resources_functions.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/resources.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/moc.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/win32/opengl.prf:
+D:/QT/5.15.2/mingw81_32/mkspecs/features/uic.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/qmake_use.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/file_copies.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/win32/windows.prf:
@@ -494,10 +496,10 @@ D:/QT/5.15.2/mingw81_32/mkspecs/features/exceptions.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/yacc.prf:
 D:/QT/5.15.2/mingw81_32/mkspecs/features/lex.prf:
 ../qt_quick_playground/qt_quick_playground.pro:
-D:/QT/5.15.2/mingw81_32/lib/Qt5VirtualKeyboard.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Location.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5PositioningQuick.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Quick.prl:
+D:/QT/5.15.2/mingw81_32/lib/Qt5Widgets.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Gui.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5QmlModels.prl:
 D:/QT/5.15.2/mingw81_32/lib/Qt5Qml.prl:

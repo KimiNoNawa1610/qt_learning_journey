@@ -1,6 +1,7 @@
-QT += quick virtualkeyboard
+QT += quick
 QT += core gui location positioning # this is needed for the position and location
 QT += network
+QT += widgets
 
 #LIBS += -LD:/'Program Files'/OpenSSL-Win64/bin -lubsec
 

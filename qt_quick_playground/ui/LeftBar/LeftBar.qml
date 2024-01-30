@@ -74,6 +74,20 @@ Rectangle{
             id:graph_button
             width:parent.width
             text:"Graph"
+            onClicked:{
+                if (main_loader.source!="qrc:/ui/ChartScreen/ChartScreen.qml"){
+                    main_loader.setSource("qrc:/ui/ChartScreen/ChartScreen.qml")
+                }
+            }
+        }
+
+        Button{
+            id:logout_button
+            width:parent.width
+            text:"Logout"
+            onClicked:{
+                Qt.callLater(Qt.quit)
+            }
         }
     }
 
