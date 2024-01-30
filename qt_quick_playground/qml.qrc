@@ -14,5 +14,6 @@
         <file>ui/UserScreen/UserScreen.qml</file>
         <file>ui/access/profile.png</file>
         <file>StackViewPage.qml</file>
+        <file>ui/TableScreen/TableScreen.qml</file>
     </qresource>
 </RCC>

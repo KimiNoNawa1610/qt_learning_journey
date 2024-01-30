@@ -64,6 +64,10 @@ Rectangle{
             id:table_button
             width:parent.width
             text:"Table"
+            onClicked:{if (main_loader.source!="qrc:/ui/TableScreen/TableScreen.qml"){
+                    main_loader.setSource("qrc:/ui/TableScreen/TableScreen.qml")
+                }
+            }
         }
 
         Button{

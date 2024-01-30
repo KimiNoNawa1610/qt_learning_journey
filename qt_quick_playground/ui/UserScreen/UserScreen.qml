@@ -59,6 +59,7 @@ Rectangle {
         id:user_language
         anchors{
             left:user_screen.left
+            right:user_name.right
             top:user_email.bottom
             leftMargin: 40
             topMargin: 20
@@ -87,6 +88,24 @@ Rectangle {
         text: "Role: Tester"
         font.pixelSize: 20
         anchors.horizontalCenter: parent.horizontalCenter
+    }
+
+    // place holder for other other info
+    Rectangle{
+        id:place_holder_info
+        anchors{
+            left: user_language.right
+            top:user_screen.top
+            bottom:user_screen.bottom
+            right:user_screen.right
+            leftMargin: 30
+        }
+
+        color: "green"
+        Text {
+            id: text_holder
+            text: qsTr("Other Info")
+        }
     }
 
 }

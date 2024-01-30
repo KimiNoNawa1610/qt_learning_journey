@@ -123,6 +123,7 @@ release/qrc_qml.cpp: ../qt_quick_playground/qml.qrc \
 		../qt_quick_playground/ui/LeftBar/LeftBar.qml \
 		../qt_quick_playground/ui/MainScreen/MainScreen.qml \
 		../qt_quick_playground/ui/MainScreen/NavigationSearchBox.qml \
+		../qt_quick_playground/ui/TableScreen/TableScreen.qml \
 		../qt_quick_playground/ui/UserScreen/UserScreen.qml
 	D:\QT\5.15.2\mingw81_32\bin\rcc.exe -name qml ..\qt_quick_playground\qml.qrc -o release\qrc_qml.cpp
 
