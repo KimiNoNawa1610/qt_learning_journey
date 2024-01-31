@@ -1,9 +1,10 @@
 #include "test.h"
 #include <QDebug>
 
-test::test(QObject *parent)
-    : QObject{parent}
-{}
+test::test(QObject *parent): QObject{parent}
+{
+
+}
 
 void test::clickMe(QString text)
 {
